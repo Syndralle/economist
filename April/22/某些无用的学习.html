@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/Camille/AppData/Local/Temp/mume2023322-15288-1tewlfg.9lpk.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>某些无用的学习</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./某些无用的学习_files/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview {
+  /* RESET
+=============================================================================*/
+  /* BODY
+=============================================================================*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px 40px 20px 40px;
+  margin: 0 auto;
+  text-align: justify;
+  /* BLOCKS
+=============================================================================*/
+}
+.markdown-preview.markdown-preview p,
+.markdown-preview.markdown-preview blockquote,
+.markdown-preview.markdown-preview ul,
+.markdown-preview.markdown-preview ol,
+.markdown-preview.markdown-preview dl,
+.markdown-preview.markdown-preview table,
+.markdown-preview.markdown-preview pre {
+  margin: 15px 0;
+}
+/* HEADERS
+=============================================================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+h1 tt,
+h1 code,
+h2 tt,
+h2 code,
+h3 tt,
+h3 code,
+h4 tt,
+h4 code,
+h5 tt,
+h5 code,
+h6 tt,
+h6 code {
+  font-size: inherit;
+}
+h1 {
+  font-size: 24px;
+  color: #000;
+}
+h2 {
+  font-size: 20px;
+  color: #000;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  color: #777;
+  font-size: 16px;
+}
+body > h2:first-child,
+body > h1:first-child,
+body > h1:first-child + h2,
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 10px;
+}
+/* LINKS
+=============================================================================*/
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* LISTS
+=============================================================================*/
+ul,
+ol {
+  padding-left: 30px;
+}
+ul li > :first-child,
+ol li > :first-child,
+ul li ul:first-of-type,
+ol li ol:first-of-type,
+ul li ol:first-of-type,
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+dl {
+  padding: 0;
+}
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+dl dt:first-child {
+  padding: 0;
+}
+dl dt > :first-child {
+  margin-top: 0px;
+}
+dl dt > :last-child {
+  margin-bottom: 0px;
+}
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+dl dd > :first-child {
+  margin-top: 0px;
+}
+dl dd > :last-child {
+  margin-bottom: 0px;
+}
+/* CODE
+=============================================================================*/
+pre,
+code,
+tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+code,
+tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+pre > code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+pre code,
+pre tt {
+  background-color: transparent;
+  border: none;
+}
+kbd {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #DDDDDD;
+  background-image: linear-gradient(#F1F1F1, #DDDDDD);
+  background-repeat: repeat-x;
+  border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+  border-image: none;
+  border-radius: 2px 2px 2px 2px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 10px;
+  padding: 1px 4px;
+}
+/* QUOTES
+=============================================================================*/
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+  font-family: 'Times New Roman', 'Kaiti';
+}
+blockquote > :first-child {
+  margin-top: 0px;
+}
+blockquote > :last-child {
+  margin-bottom: 0px;
+}
+/* HORIZONTAL RULES
+=============================================================================*/
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Times New Roman, Songti, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Times New Roman, Songti, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-cly1 {
+  text-align: left;
+  vertical-align: middle;
+}
+.tg .tg-lboi {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: middle;
+}
+/* TABLES
+=============================================================================*/
+/*table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}*/
+/* IMAGES
+=============================================================================*/
+img {
+  max-width: 100%;
+}
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%E4%BD%A0%E7%9A%84%E5%AD%A6%E4%BD%8D%E7%9C%9F%E7%9A%84%E5%80%BC%E5%BE%97%E5%90%97">你的学位真的值得吗？</h1>
+
+<h2 class="mume-header" id="%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B%E8%83%BD%E5%B8%A6%E7%BB%99%E4%BD%A0%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%9B%9E%E6%8A%A5%E7%AE%97%E4%B8%8B%E6%9D%A5%E7%9C%9F%E6%98%AF%E5%B0%91%E5%BE%97%E5%8F%AF%E6%80%9C">大学课程能带给你的经济回报，算下来真是少得可怜</h2>
+
+<p>上大学值得吗？从前，答案很显然是“值得”。几十年来，富裕国家的年轻人争先恐后地涌向高等教育。政府也一直宣传大学对社会阶层流动和经济增长的推动作用。然而，随着学费上涨和毕业生收入停滞不前，人们的幻想逐渐破灭。3月31日，《华尔街日报》公布一项民意调查，指出信任危机愈演愈烈：现如今56%的美国人认为大学学位不再值得他们投入时间和金钱。</p>
+<p>至少对于普通本科生而言，情况并非如此。在大多数地方，对于大多数学生来说，高等教育的经济回报仍然非常可观。然而，攻读学位的风险却越来越大。学习佼佼者的回报日益增长，但令人担忧的是，很大一部分学生发现学习是件得不偿失的事。</p>
+<p>诸如税收记录一类的新数据集正前所未有地揭示这种差距。通过这些数据集，可以追踪学生在特定大学学习特定课程后，观察他们在未来能挣多少钱。随着时间的推移，这些数据细节将帮助学生规避收入最低的工作，抓住最佳机会。选择专业和按时毕业至关重要，而选择大学则略微次要。这对那些想打击“低价值学位”的政府来说也是一桩好事。</p>
+<p>毕业生收入激增始于20世纪80年代的富裕国家。那时，获得学士学位及以上和无学士学位的人之间的收入差距——通常称为“大学工资溢价”——开始拉大。在20世纪70年代，美国大学毕业生的平均收入比高中毕业生高35%。到2021年，这一差距已经扩大到66%。</p>
+<p>最近，许多国家的工资溢价要么陷入停滞，要么开始下滑，而各大高校收取的学费却已经上涨（见表1）。英国从20世纪90年代末的学费全免到现在每年收取9,250英镑（约合11,000美元）的学费，是富裕国家中学费最高的。据纽约联邦储备银行杰森·阿贝尔（Jaison Abel）和理查德·德兹（Richard Deitz）提供的数据，按实际价值计算，一名美国普通本科生所支付的费用从20世纪70年代的每年2,300美元增加到2018年的8,000美元左右（公立大学的费用通常要少很多，相比之下私立非营利学校的费用则高很多）。</p>
+<p>但是普通学位依旧值钱。2019年，阿贝尔和德兹粗略估算了一名普通美国人在本科学位上投入的年均回报率，并得出结论：普通本科学位的回报率在14%左右。虽然这低于本世纪初期时16%的峰值，但依旧相当可观，而且远远高于上世纪七十年代美国毕业生所能收回8-9%的投入成本。自那之后，毕业生工资和学费都开始飞涨。他们的估算不仅包括学费，也包括了假如他们不上大学并直接全职工作所能获得的报酬。</p>
+<p>不过，这所谓的“平均值”掩盖了极大范围的结果。迄今为止，经济学家们大多只通过问卷调查来寻求界定赢家和输家的方式。现在的趋势是，英国和挪威等政府通过提供庞大的匿名数据库来显示上百万大学毕业生的实际收入。这帮助人们更容易进行类似的比较。分类数据显示，很大一部分学生在毕业时获得的学位并不配得上他们为此所投入的一切。</p>
+<p>根据财政研究院（Institute for Fiscal Studies）提供的信息，在英国，25%的男性毕业生和15%的女性毕业生的工资少于他们没有上过大学的同龄人。虽然美国的数据不太全面，但已经开始公布上千所大学中，毕业生收入低于仅有高中学历同龄人的比例。华盛顿乔治城大学的研究人员估算，在普通的四年制大学中，有27%的学生入学六年后落入这一残酷境地。在美国排名位于末尾30%的两年制与四年制大学中，有一半以上学生都低于这一基准。</p>
+<p>没有拿到学位就退学显然是一种巨大的损失。延期毕业也会降低（学位的）价值，因为这会减少你原本可以通过全职工作来挣钱的时间。这两种情况都屡见不鲜。在富裕国家，只有不到40%的学生能够在规定年限内拿到本科学位，约四分之一的学生延期三年依然没有拿到学位。</p>
+<p>要想提高回报率，选对专业至关重要。在英国，最有可能亏本的大概是学习创意艺术（获得正回报率的男性还不足10%）、社会关怀和农业（见表2）的学生。目前为止，在美国收入最高的专业包括工程、计算机科学和商科。负回报率似乎都集中于音乐和视觉艺术专业。凭借美国的现有数据来推测不同专业学生的长期收入是很困难的。但是freopp智库的普雷斯顿·库珀（Preston Cooper）大胆推测，对于大多数大学生而言，超过四分之一的美国本科专业都会带来负回报。</p>
+<p>总体来说，学什么远比在哪学重要。但还需要注意：最差的学院和大学不论教什么内容，给学生带来的价值都很小。但乔治城大学的研究人员认为，相比于在享誉盛名的非营利私立大学就读的学生，就读于美国公立大学的学生在获得的终身回报更大。非营利大学的高额费用是原因之一。</p>
+<p>英国的收入数据让人质疑这样的假说：聪明的年轻人被推向入学门槛极高的大学时，必然因此受益颇丰，来自财政研究院的杰克·布里顿（Jack Britton）如是说。为了在激烈的入学竞争中脱颖而出，一些年轻人申请看起来最容易的专业，即使这个专业回报率通常不高。但那些不论专业、一心想要送子女上牛津或剑桥的父母需要注意了，也有证据表明，只是为了高收入而学习带来高回报的课程很可能适得其反。挪威的一项研究发现，那些真正想要学习文科，但最终选择了理科专业的学生，十年后的收入水平可能比他们原本应有的收入要低。</p>
+<p>男性比女性更有理由担心他们在高等教育上的投资会付之东流，这是因为男性在没有文凭的情况下获得高收入的可能性更大。对于那些成绩平平的人来说，上大学是一种风险，因为他们毕业后的收入水平往往低于那些拥有相同学位、准备更充分的同龄人。</p>
+<p>在英国，南亚学生攻读学位的回报率通常要高于白人学生，因为前者倾向于学习商科之类的专业，但黑人的回报率普遍更低（与同种族不上大学的普遍收入相比）。在美国，与白人和黑人学生相比，亚裔学生偿还学生债务的困难似乎最小。</p>
+<h2 class="mume-header" id="%E5%B0%B1%E4%B8%9A%E5%B8%82%E5%9C%BA%E7%9A%84%E7%A7%8D%E7%A7%8D%E8%BF%B9%E8%B1%A1">就业市场的种种迹象</h2>
+
+<p>上述所有的分析有何含义？已有诸多迹象表明高等教育市场正在发生变化。人们已经在不同的教育阶段自发地寻找更好的回报。2011年到2021年间，美国每年授予的英语和历史学位数量下降了约1/3，与此同时，计算机科学的学位数量增加了一倍多（见表3）。其他人则干脆不上大学。自2011年起，大学的入学人数逐年下降。</p>
+<p>许多大学也在通过淘汰人文学科来进行转变。今年2月，弗吉尼亚州玛丽蒙特大学的董事们投票决定取消英语、历史、哲学和神学等九大学科专业。包括密歇根州的卡尔文大学和华盛顿特区的霍华德大学在内的多所大学也取消了古典学专业。另外，英国谢菲尔德大学的考古学专业也岌岌可危。</p>
+<p>用人单位也在适应这种趋势。哈佛商学院约瑟夫·富勒（Joseph Fuller）等人的分析显示，用人单位正慢慢降低对求职者学位的要求。部分原因是劳动力市场紧缩，并且用人单位希望员工群体更加多元化。科技巨头IBM副总裁凯莉·乔丹（Kelli Jordan）表示，几年前IBM在美国发布的广告中，约80%的职位要求学位，现在大约只有50%的职位要求持有学位。乔丹女士解释说：“学位并不一定是衡量某人技能的唯一标准。”</p>
+<p>政府是否应该扩大这些趋势？在爱沙尼亚，大学五分之一的资金依赖于达成各种指标，其中包括学生按时毕业的比例。芬兰、以色列、立陶宛、瑞典等国也有类似的制度。澳大利亚政府正试图鼓励学习者做出有益社会发展的专业选择。2021年，它将社会科学、政治科学与传播学本科学生的学费翻倍，并将护理和教育专业的学费减半。学生们似乎并没有受到很大影响，这可能是因为澳大利亚的学生贷款还款条件很宽松。英国政府认为，通过给每个英国人一个在线账户，列出他们一生中有权以学习为由从国家借贷的最高金额，可以改变他们的行为。这个想法是为了让毕业离校的学生更加节俭。</p>
+<p>还有一些人仍在挥霍。乔·拜登（Joe Biden）总统希望最高法院尽快批准去年宣布的一项计划，大幅减免美国学生贷款。他还希望放宽还款要求。在未来十年，相关费用可能会达到数千亿美元。拜登还承诺公布一份“低经济价值”课程的官方清单。更加有说服力的是关于防止低价值课程从联邦学生贷款中受益的讨论。但如果没有相关国会法案，这主要只会影响营利性大学（这些大学只招收一小部分美国学生）。</p>
+<p>对很多人来说，对高等教育经济回报的日益关注过于粗浅。从事公共服务的毕业生肯定会比华尔街上的人挣得少。许多学科本身有其学习的价值和意义。然而在调查中，学生们经常表示提高赚钱能力是当务之急。对于最贫困的学生来说，良好的经济回报至关重要，因为他们学位的经济负担最重。如今，含金量低的学位相当普遍。更好的信息、市场力量以及更明智的政策可以降低这类学位的普遍性。</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  </body></html>
